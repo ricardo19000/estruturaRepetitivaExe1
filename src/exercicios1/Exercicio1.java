@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class Exercicio1 {
     public static void main(String[] arg){
-        int senha, controle;
+        String senha, controle;
 
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Insira a senha");
 
-        senha = sc.nextInt();
-        controle = 2002;
+        senha = sc.next();
+        controle = "2002";
 
-        while (senha != controle) {
+        while (!senha.equals(controle)) {
             System.out.println("Senha inválida, tente novamente");
-            senha = sc.nextInt();
+            senha = sc.next();
         }
         System.out.println("Acesso permitido");
     }
