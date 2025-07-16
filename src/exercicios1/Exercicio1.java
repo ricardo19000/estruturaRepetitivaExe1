@@ -18,5 +18,6 @@ public class Exercicio1 {
             senha = sc.next();
         }
         System.out.println("Acesso permitido");
+        sc.close();
     }
 }
